@@ -1,7 +1,7 @@
 <div class="topnav">
-  <a class="active" href="index">Home</a>
+  <a href="index">Home</a>
   <a href="donations">Donations</a>
-  <a href="reactrules">Reaction Rules</a>
+  <a class="active" href="reactrules">Reaction Rules</a>
   <a href="about">About</a>
 </div>
 
