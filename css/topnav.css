@@ -1,3 +1,10 @@
+<style>
+div {
+  max-width: 400px;
+  min-width: 100px;
+}
+</style>
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
