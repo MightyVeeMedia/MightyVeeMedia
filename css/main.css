@@ -81,4 +81,7 @@
 }
 
 /* Website Content Casing */
-.content { width: 960px }
+.content {
+  width: 960px; 
+  text-align: center;
+}
