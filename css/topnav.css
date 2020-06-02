@@ -67,3 +67,9 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Set our websites margin
+p {
+  /* border: 1px solid powderblue;
+  margin: 50px;
+}
