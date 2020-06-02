@@ -2,6 +2,7 @@
 .navbar {
   overflow: hidden;
   width: 100%;
+  left: 0;
   background-color: #333;
   font-family: Arial;
 }
