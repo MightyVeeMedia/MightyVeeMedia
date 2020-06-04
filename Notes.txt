@@ -1,0 +1,1 @@
+<a href="#home" class="active">Home</a> //This is what you add when identifying current page.
