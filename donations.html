@@ -6,12 +6,15 @@
 <style>
 .content {
    padding: 20px;
-   border: 2px solid #4CAF50;
+   border: 0px solid #4CAF50;
    color: black;
    text-align: center;
    margin: auto;
-   width: 70%;
+   width: 80%;
    background-color: white;
+   text-overflow: ellipsis;
+   padding-left:50px;
+   padding-right:50px;
 }
 </style>
 <style>
@@ -126,7 +129,7 @@ body {margin:0;font-family:Arial}
 }
 </style>
 </head>
-<body style="background-color:lightgray;">
+<body style="background-color:#f4f4f4;">
 
 <div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
@@ -170,7 +173,7 @@ required
 </select> </td></tr>
 <tr><td><b><input type="hidden" name="on2" value="Name">*Name</td></tr><tr><td><input type="text" name="os2" maxlength="200" required></td></tr></b>
 <tr><td><b><input type="hidden" name="on3" value="Video Link">*Video Link</td></tr><tr><td><input type="text" name="os3" maxlength="400" required></td></tr></b>
-<tr><td><b><input type="hidden" name="on4" value="Message">Message</td></tr><tr><td>  <textarea name="os4" maxlength="200" rows="10" cols="40" class="pp-textarea"></textarea>  </td></tr></b>
+<tr><td><b><input type="hidden" name="on4" value="Message">Message</td></tr><tr><td>  <textarea name="os4" maxlength="200" rows="10" cols="40" ; class="pp-textarea"></textarea>  </td></tr></b>
 </table>
 <input type="hidden" name="currency_code" value="USD">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
