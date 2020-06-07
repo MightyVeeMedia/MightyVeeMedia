@@ -114,6 +114,19 @@
   }
 }
 
+/* Main Content Box */
+.content {
+   padding: 20px;
+   border: 0px solid #4CAF50;
+   color: black;
+   text-align: center;
+   margin: auto;
+   width: 70%;
+   background-color: white;
+   padding-left:30px;
+   padding-right:30px;
+}
+
 /* Titles and Footer Box */
 .box {
    padding: 5px;
