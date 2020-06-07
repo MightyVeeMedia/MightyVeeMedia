@@ -114,13 +114,13 @@
   }
 }
 
-/* Footer Bar */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
+/* Titles and Footer Box */
+.box {
+   padding: 5px;
+   border: 0px solid #4CAF50;
+   color: white;
+   text-align: center;
+   width: auto;
+   background-color: #333;
+   opacity: 1;
 }
