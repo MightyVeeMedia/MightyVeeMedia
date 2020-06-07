@@ -119,7 +119,7 @@
   text-align: center;
 }
 
-<!-- Make YouTube Videos Responsive to resize -->
+/* Make YouTube Videos Responsive to resize */
 @media screen and (max-width: 560px) {
   .video-responsive {
     overflow: hidden;
