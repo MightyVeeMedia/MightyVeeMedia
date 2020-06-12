@@ -169,15 +169,6 @@ body {margin:0;font-family:Arial}
   <div class="video-container">
 <iframe class="latestVideoEmbed" vnum='0' cid="UCg_bTCpr1VaOknZ1alYxnWQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
 </div>
-  
-<br><br><br>
-  
-  <!--LATEST FROM ARCHIVES-->
-<div class="box"> <h2><font color=#6ef589><div class="box_textshadow">Latest From B&B's Archives</div></font></h2> </div>
-
-<div class="video-container">
-<iframe class="latestVideoEmbed" vnum='1' cid="UCsM6SPhubTEv8fqUT2-tbDw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-</div>
 
 <!--Latest Vids Script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -204,6 +195,41 @@ for (var i = 0, len = iframes.length; i < len; i++) {
 </div>
 <br>
 
+
+<div class="content">
+  <!--LATEST FROM ARCHIVES-->
+<div class="box"> <h2><font color=#6ef589><div class="box_textshadow">Latest From B&B's Archives</div></font></h2> </div>
+
+<div class="video-container">
+<iframe class="latestVideoEmbed" vnum='1' cid="UCsM6SPhubTEv8fqUT2-tbDw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</div>
+
+
+
+
+<!--Latest Vids Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+function loadVideo(iframe) {
+  $.getJSON(reqURL + iframe.getAttribute('cid'),
+    function(data) {
+      var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+      console.log(videoNumber);
+      var link = data.items[videoNumber].link;
+      id = link.substr(link.indexOf("=") + 1);
+      iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=0");
+    }
+  );
+}
+var iframes = document.getElementsByClassName('latestVideoEmbed');
+for (var i = 0, len = iframes.length; i < len; i++) {
+  loadVideo(iframes[i]);
+}
+</script>
+
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -214,7 +240,6 @@ function myFunction() {
   }
 }
 </script>
-
 </body>
   
   <footer>
