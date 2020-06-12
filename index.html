@@ -141,19 +141,8 @@ body {margin:0;font-family:Arial}
   <img src="./pics/BBT Logo2.png" alt="BBT Logo" style="width:30%; height:30%; padding:10px; margin-left:5px;">
   
   <!-- NAV LINKS -->
-<a href="reactrules">Reaction Rules</a>
-
-  <div class="dropdown">
-    <button class="dropbtn">Support 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQKYW49565CUW&source=url">Donate</a>
-      <a href="donations">Donate with Request</a>
-    </div>
-  </div>
-
- <a href="index">Home</a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQKYW49565CUW&source=url">Donate</a>
+<a href="index">Home</a>
 
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
@@ -164,22 +153,28 @@ body {margin:0;font-family:Arial}
 
 <!--NEWEST CONTENT -->
 
-  <div class="box"> <h2><font color=#6ef589><div class="box_textshadow">Latest From BBT </div></font></h2> </div>
-  <div class="video-container">
-<iframe class="latestVideoEmbed" vnum='0' cid="UCg_bTCpr1VaOknZ1alYxnWQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+  <div class="box"> <h2><font color=#6ef589><div class="box_textshadow">The Latest</div></font></h2> </div>
+  <br>
+  WEBSITE IS UNDER DEVELOPMENT!
+
+<!--NEWEST CONTENT END! -->
+  <br>
 </div>
 <br>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
   
-  <!--Content Divider
-<hr height=50%; color=#333> -->
-
-  <!-- 2nd Video
-<div class="video-container">
-<iframe class="latestVideoEmbed" vnum='1' cid="UCg_bTCpr1VaOknZ1alYxnWQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-</div>
--->
-
-<!--Latest Vids Script -->
+  
+  <!--Latest Vids Script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
 var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
@@ -197,21 +192,6 @@ function loadVideo(iframe) {
 var iframes = document.getElementsByClassName('latestVideoEmbed');
 for (var i = 0, len = iframes.length; i < len; i++) {
   loadVideo(iframes[i]);
-}
-</script>
-
-<!--NEWEST CONTENT END! -->
-</div>
-<br>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
 }
 </script>
 
