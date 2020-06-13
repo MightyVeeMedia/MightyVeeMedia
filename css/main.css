@@ -1,3 +1,8 @@
+/* Add our Background Image */
+body {
+  background-image: url('/./pics/Space2.png');
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
