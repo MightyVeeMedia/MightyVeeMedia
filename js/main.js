@@ -1,6 +1,7 @@
   function latestvids(){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+<script>
+    var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
 function loadVideo(iframe) {
   $.getJSON(reqURL + iframe.getAttribute('cid'),
     function(data) {
@@ -16,6 +17,7 @@ var iframes = document.getElementsByClassName('latestVideoEmbed');
 for (var i = 0, len = iframes.length; i < len; i++) {
   loadVideo(iframes[i]);
 }
+    </script>
 }
 
 
