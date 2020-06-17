@@ -17,3 +17,17 @@ for (var i = 0, len = iframes.length; i < len; i++) {
   loadVideo(iframes[i]);
 }
 }
+
+
+function ganalytics(){
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169305111-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169305111-1');
+</script>
+  
+}
