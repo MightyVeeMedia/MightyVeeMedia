@@ -167,6 +167,19 @@ body {
    opacity: 1;
 }
 
+/* Advertisement Box */
+.adbox {
+   padding: 10px;
+   border: 0px solid #4CAF50;
+   color: black;
+   text-align: center;
+   margin: auto;
+   width: 80%;
+   background-color: white;
+   padding-left:20px;
+   padding-right:20px;
+}
+
 /* Text Outline */
 .box_textshadow {
      text-shadow: 4px 4px 0px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
