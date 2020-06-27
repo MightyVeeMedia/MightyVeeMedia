@@ -15,3 +15,6 @@ function validateForm2() {
     return false;
   }
 }
+
+/* Test Function */
+alert("This alert box was called with the onload event");
