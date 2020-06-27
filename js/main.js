@@ -16,5 +16,6 @@ function validateForm2() {
   }
 }
 
-/* Test Function */
+/* Test Function
 alert("Form Updated!");
+*/
