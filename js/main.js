@@ -11,7 +11,7 @@ function validateForm() {
 function validateForm() {
   var x = document.forms["reqform"]["os2"].value;
   if (x.includes("Lyons") || x.includes("PeteJMarsh") || x.includes("Marsh")) {
-    alert("We cannot currently process this donation.");
+    alert("Oops! We cannot currently process this donation.");
     return false;
   }
 }
@@ -20,7 +20,7 @@ function validateForm() {
 function validateForm2() {
   var x = document.forms["reqform"]["email"].value;
   if (x == "AwesomeBro172@gmail.com" || x == "awesomebro172@gmail.com") {
-    alert("We cannot currently process this donation.");
+    alert("Oops! We cannot currently process this donation.");
     return false;
   }
 }
