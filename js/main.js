@@ -10,7 +10,7 @@ function validateForm() {
 /*Banned Users Script */
 function validateForm() {
   var x = document.forms["reqform"]["os2"].value;
-  if (x.includes("Lyons") || x.includes("PeteJMarsh")) {
+  if (x.includes("Lyons") || x.includes("PeteJMarsh") || x.includes("Marsh")) {
     alert("We cannot currently process this donation.");
     return false;
   }
