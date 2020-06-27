@@ -1,7 +1,17 @@
-/*Banned Users Script */
+/*Banned Users Script 0
 function validateForm() {
   var x = document.forms["reqform"]["os2"].value;
   if (x == "Brian Lyons" || x == "brianlyons" || x == "BrianLyons") {
+    alert("We cannot currently process this donation.");
+    return false;
+  }
+} */
+
+/*Banned Users Script */
+function validateForm() {
+  var x = document.forms["reqform"]["os2"].value;
+  var n = x.includes("Lyons");
+  if (n == true) {
     alert("We cannot currently process this donation.");
     return false;
   }
