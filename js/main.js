@@ -1,6 +1,6 @@
 /*Banned Users Script */
 function validateForm() {
-  var x = document.forms["myForm"]["name"].value;
+  var x = document.forms["myForm"]["on2"].value;
   if (x == "Brian Lyons" || x == "brianlyons" || x == "BrianLyons") {
     alert("We cannot currently process this donation.");
     return false;
