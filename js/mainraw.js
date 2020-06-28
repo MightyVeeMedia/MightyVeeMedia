@@ -2,7 +2,7 @@
 function validateForm() {
   var x = document.forms["reqform"]["os2"].value;
   if (x.includes("Lyons") || x.includes("Marsh")) {
-    alert("Oops! We cannot currently process this donation.");
+    alert("Oops! We cannot currently process this request.");
     return false;
   }
 }
@@ -12,7 +12,7 @@ function validateForm() {
 function validateForm() {
   var x = document.forms["reqform"]["os2"].value;
   if (x.includes("Lyons")) {
-    alert("Oops! We cannot currently process this donation.");
+    alert("Oops! We cannot currently process this request.");
     return false;
   }
 }
