@@ -7,6 +7,16 @@ function validateForm() {
   }
 }
 
+
+/*Banned Users Script */
+function validateForm() {
+  var x = document.forms["reqform"]["os2"].value;
+  if (x.includes("Lyons")) {
+    alert("Oops! We cannot currently process this donation.");
+    return false;
+  }
+}
+
 /* Test Function
 alert("Form Updated!");
 */
