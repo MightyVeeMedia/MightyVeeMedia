@@ -9,7 +9,6 @@ body  {
   background-image: url("/./pics/webbg.png");
   /*background-repeat: no-repeat;*/
   background-repeat: repeat-x;
-  background-repeat: repeat-y;
   background-attachment: fixed;
 }
 
