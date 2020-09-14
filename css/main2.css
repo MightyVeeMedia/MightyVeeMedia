@@ -132,6 +132,19 @@ body {
    padding-right:30px;
 }
 
+/* Sub Content Box */
+.subcontent {
+   padding: 30px;
+   border: 0px solid #4CAF50;
+   color: black;
+   text-align: center;
+   margin: auto;
+   width: 70%;
+   background-color: white;
+   padding-left:40px;
+   padding-right:40px;
+}
+
 /* Titles and Footer Box */
 .box {
    padding: 5px;
