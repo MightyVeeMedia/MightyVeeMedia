@@ -5,7 +5,7 @@ body {
 
 /* Background Image */
 body  {
-  background-image: url("/./pics/webbg.png");
+  background-image: url("/./pics/bluebg.png");
   /*background-repeat: no-repeat;*/
   background-repeat: repeat-x;
   background-attachment: fixed;
