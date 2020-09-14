@@ -3,6 +3,14 @@ body {
   background-image: url('/./pics/Space2.png');
 } */
 
+/* Background Image */
+body  {
+  background-image: url("/./pics/webbg.png");
+  /*background-repeat: no-repeat;*/
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
