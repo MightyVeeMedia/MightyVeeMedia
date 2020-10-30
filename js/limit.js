@@ -1,22 +1,8 @@
-/*Banned Users Script */
+/*Limit Reached Script */
 function validateForm() {
   var x = document.forms["reqform"]["os2"].value;
-  if (x.includes("Lyons") || x.includes("Marsh")) {
-    alert("Oops! We cannot currently process this request.");
+  if (x.includes("Lyons") || x.includes("SoniKKnine")) {
+    alert("Oops! Request limit has been reached! Try again next week!");
     return false;
   }
 }
-
-
-/*Banned Users Script */
-function validateForm() {
-  var x = document.forms["reqform"]["os2"].value;
-  if (x.includes("Sonic")) {
-    alert("Oops! Request limit has been reached.");
-    return false;
-  }
-}
-
-/* Test Function
-alert("Form Updated!");
-*/
